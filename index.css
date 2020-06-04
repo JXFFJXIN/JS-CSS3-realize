@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* 布局 */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    background-color:#689;
+    /* 开启景深 */
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
+/* 图片居中及自身设置 */
+.wrapper img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -180px;
+    margin-left: -150px;
+    width: 300px;
+    height: 360px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
